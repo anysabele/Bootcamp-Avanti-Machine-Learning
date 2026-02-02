@@ -1,0 +1,20 @@
+
+## 1. Explique, com suas palavras, o que é Machine Learning?
+
+É uma área da inteligência artificial que permite que computadores aprendam sem serem previamente programados para isso. Seu aprendizado advém de dados (rotulados ou não) e feedbacks. Alguns tipos de aprendizado de máquina são: Supervisionado (a máquina aprende por dados previamente rotulados), Não Supervisionado (a máquina recebe dados não rotulados e precisa aprender por padrões desses dados) e por Reforço, usado na robótica (a máquina possui um objetivo e aprende por feedbacks ou recompensas). Além desses exemplos, existem mais tipos de aprendizado de máquina, e o objetivo de todos é realizar previsões e tomar decisões com base nos padrões aprendidos.
+
+## 2. Explique o conceito de conjunto de treinamento, conjunto de validação e conjunto de teste em Machine Learning.
+
+Separar o conjunto de dados em conjunto de treino, validação e teste é de suma importância para evitar viés, underfitting, overfitting, etc., e assim garantir um bom desempenho do modelo. O conjunto de dados de treinamento serve para otimizar os pesos/parâmetros; o de validação serve para ajustar hiperparâmetros e escolher o melhor modelo;  e,  por fim,  o conjunto de teste serve para avaliar a performance final do modelo e adquirir métricas de desempenho.
+
+## 3. Explique como você lidaria com dados ausentes em um conjunto de dados de treinamento.
+
+Antes de tudo, eu tentaria entender todo o conjunto de dados e se há algum motivo visível para aquele dado estar ausente, pois esse valor ausente pode carregar algum padrão e ser importante. Depois de entender ou tentar entender, eu separaria os dados e, no conjunto, caso os valores ausentes sejam menos que 1%, removeria diretamente; caso seja maior que 1% e até 30%, realizaria o método de imputação considerando o tipo de variável (média/mediana ou valor de um cluster próximo para numéricas; moda ou preencher como "desconhecido" caso seja categórica), distribuição e relação com outras variáveis (há métodos como KNN para isso); caso os valores ausentes sejam maiores que 30%, vejo maior necessidade de estudar o conjunto de dados para saber se eles realmente precisam permanecer como ausentes ou preenchidos.
+
+## 4. O que é uma matriz de confusão e como ela é usada para avaliar o desempenho de um modelo preditivo?
+
+A matriz de confusão é uma tabela para entender a relação de acertos e erros, ela cruza as classificações previstas com as classificações reais e organiza os resultados em Verdadeiro Positivo, Falso Positivo, Falso Negativo e Verdadeiro Negativo. Todas as métricas de avaliação para classificação (acurácia, precisão, recall e F1-Score) advêm desta tabela, e o profissional precisa entender cada uma delas para verificar se o seu modelo realmente possui um bom desempenho para o problema que ele possui. Por exemplo, em modelos usados para problemas de saúde, o F1-score é o mais importante. A soma da diagonal principal da matriz é o número total de acertos; na diagonal principal, cada quadrado representa o número de acertos de cada classe (as colunas representam as classes); a soma de cada coluna é o número de exemplos de cada classe.
+
+## 5. Em quais áreas (tais como construção civil, agricultura, saúde, manufatura, entre outras) você acha mais interessante aplicar algoritmos de Machine Learning?
+
+Acredito que o uso de ML em todas essas áreas é de suma importância e aumenta bastante o desempenho do trabalho, mas tenho bastante interesse em aplicar os algoritmos em saúde  (como construir sistemas para otimizar o trabalho em UBS e pronto-socorro, sistemas para acelerar o diagnóstico de uma doença, sistemas para acelerar o processo de visualização de células em exames laboratoriais, e até robôs cirúrgicos). Além disso, também tenho interesse em construção de carros para cidades inteligentes e previsões de mercado.
