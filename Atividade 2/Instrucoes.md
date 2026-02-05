@@ -1,0 +1,1 @@
+## As 5 primeiras questões estão nos arquivos .py desta página, a 6 até a 10 questão podem ser acessadas no link: https://colab.research.google.com/drive/16rmpfR7tWZw-tO51GMUNED0mQ7i7prto?usp=sharing
